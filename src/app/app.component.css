@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+#button-div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    border: #000 1px solid;
+    border-radius: 8px;
+    width: 5rem;
+    height: 2.5rem;
+}
+
+button:hover {
+    background-color: rgb(37, 36, 36);
+    color: #fff;
+    border-color: #fff;
+    border-radius: 8px;
+}
+
+button:active {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff
+}

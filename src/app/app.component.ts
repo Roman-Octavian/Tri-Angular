@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tri-angular';
+  message:string = 'Clickity Click Click';
+
+  clickDetection() {
+    alert(this.message);
+  }
 }
