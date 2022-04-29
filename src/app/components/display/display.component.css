@@ -1,0 +1,20 @@
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31.3vh;
+    width: 30vw;
+    margin: 1.5vh 1.25vw 1.5vh 1.25vw;
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: #808080 0.5rem solid;
+    border-radius: 16px;
+    background-color: #FFF;
+}
+
+#display > h2 {
+    color: red;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}

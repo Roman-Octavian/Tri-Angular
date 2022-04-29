@@ -1,0 +1,21 @@
+#canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+    width: 65vw;
+    margin: 1.5vh 1.25vw 1.5vh 1.25vw;
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    border: #808080 0.5rem solid;
+    border-radius: 16px;
+    background-color: #FFF;
+}
+
+#canvas > svg > polygon {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3px;
+}

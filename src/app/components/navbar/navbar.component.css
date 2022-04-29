@@ -1,9 +1,10 @@
 nav {
     display: flex;
     justify-content: flex-end;
-    height: 6rem;
+    align-self: center;
+    height: 10vh;
     width: 100%;
-    background-color: #fff;
+    background-color: #FFF;
 }
 
 #logo {

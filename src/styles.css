@@ -10,6 +10,7 @@
 This resets all fonts back to default of 16px */
 body {
     font-size: 1.6em;
+    background-color: #C0C0C0;
 }
 
 * {
