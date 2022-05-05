@@ -4,6 +4,7 @@
     align-items: baseline;
     justify-content: center;
     height: 54vh;
+    max-height: 30rem;
     width: 30vw;
     margin: 1.5vh 1.25vw 1.5vh 1.25vw;
     padding-left: 1.25vw;
@@ -20,6 +21,26 @@
     flex-direction: row;
 }
 
+label {
+    font-size: 3rem;
+}
+
 .field {
     display: flex;
+    margin-left: 10px;
+    background: none;
+    border: 0;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
+ #a, #al {
+     color: red;
+ }
+
+ #b, #bl {
+     color: green;
+ }
+
+ #c, #cl {
+     color: blue;
+ }

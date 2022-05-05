@@ -1,5 +1,21 @@
-<div id="canvas">
-    <svg width="240" height="180">
-        <polygon points="120,0 0,180 240,180"></polygon>
-    </svg>
+<div id="canvas-container">
+    <div id="canvas">
+        <svg id="canvas-svg">
+            <!-- / -->
+            <line id="A" class="line" [attr.x1]="vertexAB.x" [attr.y1]="vertexAB.y" [attr.x2]="vertexAC.x" [attr.y2]="vertexAC.y"/>
+            <!-- \ -->
+            <line id="B" class="line" [attr.x1]="vertexAB.x" [attr.y1]="vertexAB.y" [attr.x2]="vertexCB.x" [attr.y2]="vertexCB.y"/>
+            <!-- _ -->
+            <line id="C" class="line" [attr.x1]="vertexCB.x" [attr.y1]="vertexCB.y" [attr.x2]="vertexAC.x" [attr.y2]="vertexAC.y"/>
+
+            <!-- /\ -->
+            <circle id="vertexAB" class="vertex" cdkDrag (cdkDragMoved)="onDragAB($event)" [attr.cx]="initialVertexAB.x" [attr.cy]="initialVertexAB.y" [attr.r]="initialVertexAB.r"/>
+            <!-- /_ -->
+            <circle id="vertexAC" class="vertex" cdkDrag (cdkDragMoved)="onDragAC($event)" [attr.cx]="initialVertexAC.x" [attr.cy]="initialVertexAC.y" [attr.r]="initialVertexAC.r"/>
+            <!-- _\ -->
+            <circle id="vertexCB" class="vertex" cdkDrag (cdkDragMoved)="onDragCB($event)" [attr.cx]="initialVertexCB.x" [attr.cy]="initialVertexCB.y" [attr.r]="initialVertexCB.r"/>
+        </svg>
+    </div>
+
+    <app-fields [lineA]="lineA" [lineB]="lineB" [lineC]="lineC"></app-fields>
 </div>

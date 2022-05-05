@@ -1,14 +1,17 @@
+<app-display></app-display>
+
 <div id="fields">
+    <h3>Lengths:</h3>
     <div class="individual-field">
-        <label for="a">A: </label>
-        <input class="field" id="a" type="number">
+        <label for="a" id="al">A: </label>
+        <input class="field" id="a" disabled [(ngModel)]="lineA!.d">
     </div>
     <div class="individual-field">
-        <label for="b">B: </label>
-        <input class="field" id="b" type="number">
+        <label for="b" id="bl">B: </label>
+        <input class="field" id="b" disabled [(ngModel)]="lineB!.d">
     </div>
     <div class="individual-field">
-        <label for="c">C: </label>
-        <input class="field" id="c" type="number">
+        <label for="c" id="cl">C: </label>
+        <input class="field" id="c" disabled [(ngModel)]="lineC!.d">
     </div>
 </div>

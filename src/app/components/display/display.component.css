@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 31.3vh;
+    max-height: 19rem;
     width: 30vw;
     margin: 1.5vh 1.25vw 1.5vh 1.25vw;
     padding-left: 1.25vw;
@@ -17,4 +18,5 @@
 #display > h2 {
     color: red;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
 }

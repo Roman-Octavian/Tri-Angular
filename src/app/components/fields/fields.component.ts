@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Line } from 'src/app/line';
 
 @Component({
   selector: 'app-fields',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FieldsComponent implements OnInit {
 
+  @Input() lineA?: Line;
+  @Input() lineB?: Line;
+  @Input() lineC?: Line;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
 }
