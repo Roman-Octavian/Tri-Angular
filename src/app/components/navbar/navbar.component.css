@@ -4,6 +4,7 @@ nav {
     align-self: center;
     height: 10vh;
     max-height: 6rem;
+    min-height: 3.7rem;
     width: 100%;
     background-color: #FFF;
 }
@@ -28,11 +29,10 @@ nav {
 }
 
 #logo:hover + #title > h1 {
-    color: darkred;
+    filter: brightness(65%);
 }
 
 #triangle {
-    fill: rgb(255, 0, 0);
     stroke: rgb(212, 212, 212);
     stroke-width: 2px;
 }
@@ -44,7 +44,6 @@ nav {
 }
 
 #title > h1 {
-    color: rgb(255, 0, 0);
     font-size: 3rem;
     font-family: "Oswald", monospace;
 }
@@ -66,6 +65,21 @@ nav {
     margin-right: 2vw;
 }
 
-.nav-icon:hover > path {
-    fill: darkred;
+.nav-icon:hover {
+    filter: brightness(65%);
+}
+
+.red {
+    fill: red;
+    color: red;
+}
+
+.blue {
+    fill: blue;
+    color: blue;
+}
+
+.green {
+    fill: green;
+    color: green;
 }

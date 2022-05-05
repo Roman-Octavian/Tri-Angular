@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5vh;
 }
 
 #canvas {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50rem;
-    width: 70rem;
-    border: #808080 0.5rem solid;
+    height: 500px;
+    width: 700px;
+    border: #acacac 0.5rem solid;
     border-radius: 16px;
     background-color: #FFF;
 }
@@ -27,6 +28,8 @@
 
 .vertex {
     cursor: move;
+    fill: #acacac;
+    stroke: #000;
 }
 
 #A {
@@ -39,4 +42,29 @@
 
 #C {
     stroke: blue;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+    #canvas-container {
+        margin-top: 2vh;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    #canvas {
+        height: 400px;
+        width: 95vw;
+    }
+}
+
+@media only screen and (min-height: 0px) and (max-height: 600px) {
+    #canvas-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+    #canvas {
+        height: 80vh;
+        width: 500px;
+    }
 }

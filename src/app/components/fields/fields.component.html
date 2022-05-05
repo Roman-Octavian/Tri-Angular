@@ -1,17 +1,31 @@
 <app-display></app-display>
 
+<!-- Fields not being used two-ways because I would have to arbitrarily 
+choose which vertex to augment, and distance is also not used for movement anyways -->
 <div id="fields">
-    <h3>Lengths:</h3>
+    <h3>Side Lengths:</h3>
     <div class="individual-field">
-        <label for="a" id="al">A: </label>
         <input class="field" id="a" disabled [(ngModel)]="lineA!.d">
+        <div class="svg-container">
+            <svg class="icons-svg">
+                <line class="line-icon" id="Ai" class="line" x1="0" y1="25" x2="12.5" y2="0"/>
+            </svg>
+        </div>
     </div>
     <div class="individual-field">
-        <label for="b" id="bl">B: </label>
         <input class="field" id="b" disabled [(ngModel)]="lineB!.d">
+        <div class="svg-container">
+            <svg class="icons-svg">
+                <line class="line-icon" id="Bi" class="line" x1="25" y1="25" x2="12.5" y2="0"/>
+            </svg>
+        </div>
     </div>
     <div class="individual-field">
-        <label for="c" id="cl">C: </label>
         <input class="field" id="c" disabled [(ngModel)]="lineC!.d">
+        <div class="svg-container">
+            <svg class="icons-svg">
+                <line class="line-icon" id="Ci" class="line" x1="0" y1="15" x2="25" y2="15"/>
+            </svg>
+        </div>
     </div>
 </div>

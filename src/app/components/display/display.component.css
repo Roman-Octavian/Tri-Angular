@@ -2,21 +2,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 31.3vh;
+    height: 270px;
     max-height: 19rem;
     width: 30vw;
-    margin: 1.5vh 1.25vw 1.5vh 1.25vw;
+    margin: 15px 1.25vw 15px 1.25vw;
     padding-left: 1.25vw;
     padding-right: 1.25vw;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
-    border: #808080 0.5rem solid;
+    border: #acacac 0.5rem solid;
     border-radius: 16px;
     background-color: #FFF;
 }
 
 #display > h2 {
-    color: red;
+    color: blue;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 3vw;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+    #display {
+        width: 95vw;
+        height: 3rem;
+        margin: 5px 1.25vw 5px 1.25vw;
+    }
+
+    #display > h2 {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-height: 0px) and (max-height: 600px) {
+    #display {
+        height: 24vh;
+        margin: 0 1.25vw 5px 1.25vw;
+    }
 }

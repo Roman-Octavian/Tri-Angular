@@ -1,6 +1,7 @@
 <div id="canvas-container">
     <div id="canvas">
         <svg id="canvas-svg">
+        <!-- The three sides of the triangle -->
             <!-- / -->
             <line id="A" class="line" [attr.x1]="vertexAB.x" [attr.y1]="vertexAB.y" [attr.x2]="vertexAC.x" [attr.y2]="vertexAC.y"/>
             <!-- \ -->
@@ -8,6 +9,9 @@
             <!-- _ -->
             <line id="C" class="line" [attr.x1]="vertexCB.x" [attr.y1]="vertexCB.y" [attr.x2]="vertexAC.x" [attr.y2]="vertexAC.y"/>
 
+        <!-- The vertices of the triangle. 
+        Setting boundaries for the drag does not work as intended. Tried with "canvas-svg", "canvas" and "canvas-container"
+        Seems as if cdkDrag does not like flexbox or margins -->
             <!-- /\ -->
             <circle id="vertexAB" class="vertex" cdkDrag (cdkDragMoved)="onDragAB($event)" [attr.cx]="initialVertexAB.x" [attr.cy]="initialVertexAB.y" [attr.r]="initialVertexAB.r"/>
             <!-- /_ -->
@@ -16,6 +20,5 @@
             <circle id="vertexCB" class="vertex" cdkDrag (cdkDragMoved)="onDragCB($event)" [attr.cx]="initialVertexCB.x" [attr.cy]="initialVertexCB.y" [attr.r]="initialVertexCB.r"/>
         </svg>
     </div>
-
     <app-fields [lineA]="lineA" [lineB]="lineB" [lineC]="lineC"></app-fields>
 </div>
