@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/74454371/167010255-c793a792-61ea-4b71-
 
 ---
 ## Project Description
-This is a (semi) responsive SPA (Single Page Application) that detects whether a user-generated triangle is equilateral, isosceles, scalene and more. The intention behind this simple project is to get familiar with AngularJS through the use of lifecycle hooks, components, directives, etc.
+This is a (semi) responsive SPA (Single Page Application) that detects whether a user-generated triangle is equilateral, isosceles, scalene and more. The intention behind this simple project is to get familiar with Angular through the use of lifecycle hooks, components, directives, etc.
 
 ---
 ## Tech Stack
